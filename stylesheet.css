@@ -1,0 +1,23 @@
+
+
+.bg-image {
+    background-image: url(https://wallpaperaccess.com/full/1105642.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position:absolute;
+}
+
+.info-box {
+    background-color: #dedede;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: 600;
+} 
+
+h2 {
+    color:aliceblue;
+}

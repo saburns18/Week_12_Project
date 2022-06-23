@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="stylesheet.css"> 
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Burns Brewing Beer Information</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              <a class="nav-link text-white" href="#">Buy Beer</a>
+              <a class="nav-link text-white" href="#">Shipping</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+
+    <main class="container bg-image">
+        <form id="myForm"></form>
+            <div class="new-beer">
+                <label><h2>New Beer</h2></label>
+                    <input type="text" id="name" class="form-control"> <br>
+                        <div class="row">
+                            <div class="col-sm">
+                                <input type="text" id="style" class="form-control" placeholder="style">
+                            </div>
+                            <div class="col-sm">
+                            <input type="text" id="ibu" class="form-control" placeholder="IBU">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-control">Add</button> <br>
+            </div> 
+        </form><br>
+        <div id="updateBeer" class="card">
+            <form id="updateForm">
+                <div class="row">
+                    <div class="col-sm">
+                        <input type="text" id="updateId" class="form-control" placeholder="ID">
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" id="updateName" class="form-control" placeholder="Beer Name">
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" id="updateStyle" class="form-control" placeholder="Beer Style">
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" id="updateIbu" class="form-control" placeholder="IBU">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-info form-control">Update</button> <br>
+            </form> <br>
+        <div id="render"></div>
+    </main>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="index.js"></script>
+    <!-- <script src="index2.js"></script> --> 
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
